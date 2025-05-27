@@ -41,18 +41,19 @@
 -  username: 'postgres'
 -  password: 'trust'
 -  database: 'Event_buddy'
-API Endpoints (Overview)
-Method	Endpoint	Description	Auth
-POST	/auth/signup	Register new user	❌
-POST	/auth/login	Login (returns JWT)	❌
-GET	/events/upcoming	Fetch future events	❌
-GET	/events/past	Fetch past events	❌
-POST	/events	Create event (admin)	✅ admin
-PUT	/events/:id	Update event	✅ admin
-DELETE	/events/:id	Delete event	✅ admin
-POST	/bookings/:eventId	Book seats	✅ user
-GET	/bookings/my-bookings	View user's bookings	✅ user
-DELETE	/bookings/:id	Cancel a booking	✅ user
+
+| Method | Endpoint                 | Description           | Auth     |
+|--------|--------------------------|------------------------|----------|
+| POST   | /auth/signup             | Register new user      | ❌       |
+| POST   | /auth/login              | Login (returns JWT)    | ❌       |
+| GET    | /events/upcoming         | Fetch future events    | ❌       |
+| GET    | /events/past             | Fetch past events      | ❌       |
+| POST   | /events                  | Create event (admin)   | ✅ admin |
+| PUT    | /events/:id              | Update event           | ✅ admin |
+| DELETE | /events/:id              | Delete event           | ✅ admin |
+| POST   | /bookings/:eventId       | Book seats             | ✅ user  |
+| GET    | /bookings/my-bookings    | View user's bookings   | ✅ user  |
+| DELETE | /bookings/:id            | Cancel a booking       | ✅ user  |
 
 
 
