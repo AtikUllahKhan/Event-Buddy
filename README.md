@@ -41,6 +41,7 @@
 -  username: 'postgres'
 -  password: 'trust'
 -  database: 'Event_buddy'
+## API Endpoints
 
 | Method | Endpoint                 | Description           | Auth     |
 |--------|--------------------------|------------------------|----------|
